@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="images/Logo.png" alt="Logo">
+    </div>    
+    <div class="container">
+        <section class="input-section">
+            <textarea id="inputTexto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="input-info">
+                <img src="images/Group.png" alt="Información" class="info-icon">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons-container">
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        
+        <section class="output-section">
+            <!-- Aquí añades la ilustración -->
+            <img src="images/Muñeco.png" alt="Ilustración" class="muñeco">
+            <p class="mensaje-encontrado"><b>Ningún mensaje fue encontrado</b></p>
+            <p class="instrucciones">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <textarea id="resultado" readonly></textarea>
+            <button id="copiar" style="display: none;">Copiar</button>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>Desarrollado por Mayra Herrera. © 2024.</p>
+    </footer>
+    <script src="encriptador.js"></script>
+</body>
+</html>
